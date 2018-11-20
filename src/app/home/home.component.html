@@ -1,0 +1,70 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+    <h1>
+      Welcome to {{ name }} 's Angular App!
+    </h1>
+    <h1>
+      I am {{ myAge }} years old
+    </h1>
+    <img width="300" alt="Angular Logo" src="{{me}}">
+  </div>
+  <h2>Here are some cool things about {{myName}} : </h2>
+  <ol>
+    <li><h2>I really like <a [routerLink]="['/math']">Math!</a></h2>
+    </li>
+    <li>
+  
+      <h2><a target="_blank" rel="noopener"
+         href="https://www.youtube.com/watch?v=7Vre_nWbPxk"
+  >Lebron James Highlights</a></h2>
+  
+      <video width="320" height="240" controls>
+        <source src="{{lebron}}" type="video/mp4">
+      </video>
+    </li>
+    <li>
+      <h2><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=FFoLwHyq5ls"
+      >Sachin Tendulkar Highlights</a></h2>
+      <h3> Sachin Tendulkar is {{playerage}} years old</h3>
+  
+  
+      <div>
+        <video width="320" height="240" controls>
+          <source src="{{Sachin}}" type="video/mp4">
+        </video>
+      </div>
+  
+      <div>
+        <p>How old are you?</p>
+        <!-- <input title = "How old are you?" [value]="ageInput"/> -->
+        <input title = "How old are you?" [(ngModel)]="ageInput" type="number">
+        <p>{{ageInput}}</p>
+        <button (click)= "getAgeDifference()">Get age difference!</button>
+        <h3 *ngIf="playerageDifference">There is a {{playerageDifference}} year difference between you and Sachin!</h3>
+      </div>
+    </li>
+  
+  
+  
+  
+  
+  
+  
+    <li>
+      <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki"
+    >visited Montreal
+      </a></h2>
+    </li>
+  
+  
+    <h3>How many points will I score?</h3>
+    <div>{{randomPoints}}</div>
+    <button (click)="getRandomPoints()">Guess!</button>
+    <li>
+      <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Born near the 7th wonder of the world (The Taj Mahal)
+      </a></h2>
+    </li>
+  </ol>
+  
+  <img width="300" alt="Angular Logo" src="{{hometownImage}}">
+  
