@@ -14,4 +14,8 @@ export class MathGamesComponent implements OnInit {
 
   player1img = '../assets/images/atharv.jpg';
   player2img = '../assets/images/jami.jpg';
+  userInputMathFraction = null;
+  correctAnswerFraction = 18; 
+  showAnswerFraction = false;
+  checkAnswerFraction = false;
 }

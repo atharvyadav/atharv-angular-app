@@ -7,4 +7,27 @@ I've given Jami 1/3 of my marbles
 Thanks for giving me 6 marbles, brotha!    
 </div>
 
-<img src= "{{player1img}}" width="20"> Atharv originally had <input= 
+<img src= "{{player1img}}" width="20"> Atharv originally had 
+<input type ="number" [(ngModel)]= "userInputMathFraction"> marbles
+<div>
+<button (click)= "showAnswerFraction =!showAnswerFraction">
+Show Answer
+</button>
+<p *ngIf= "showAnswerFraction">
+    {{correctAnswerFraction}}</p>
+
+<div>
+ <button (click)= "checkAnswerFraction =!checkAnswerFraction">
+      Check Answer 
+    </button>
+<div *ngIf="checkAnswerFraction">
+<div *ngIf="userInputMathFraction==correctAnswerFraction">
+    Correct Answer 😄🔥👌💯
+
+</div>
+<div *ngIf="userInputMathFraction!=correctAnswerFraction">
+        Wrong Answer 😭
+    
+    </div>
+</div>
+

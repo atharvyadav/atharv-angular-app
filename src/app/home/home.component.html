@@ -36,7 +36,6 @@
   
       <div>
         <p>How old are you?</p>
-        <!-- <input title = "How old are you?" [value]="ageInput"/> -->
         <input title = "How old are you?" [(ngModel)]="ageInput" type="number">
         <p>{{ageInput}}</p>
         <button (click)= "getAgeDifference()">Get age difference!</button>
